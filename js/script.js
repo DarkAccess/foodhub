@@ -449,14 +449,16 @@ if (checkoutForm) {
 
             onSuccess: function (transaction) {
 
-                alert(
-                    "Payment successful!\n\nReference: " +
-                    transaction.reference
-                );
+    document.getElementById("payment-reference").value =
+        transaction.reference;
 
-                // Submit the order to Formspree after payment
-                checkoutForm.submit();
-            },
+    alert(
+        "Payment successful!\n\nReference: " +
+        transaction.reference
+    );
+
+    checkoutForm.submit();
+},
 
             onCancel: function () {
                 alert("Payment cancelled.");
