@@ -429,7 +429,7 @@ if (checkoutForm) {
 
         paystack.newTransaction({
 
-            key: "YOUR_PUBLIC_KEY_HERE",
+            key: "pk_test_ae5ec5b6327880a0fdbd5ccd6056602760894089",
 
             email: email,
 
